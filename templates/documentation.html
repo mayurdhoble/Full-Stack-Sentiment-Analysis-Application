@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Alexa Sentiment Analysis</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --code-bg: #f8f9fa;
+            --border-color: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        /* Documentation Container */
+        .docs-container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation */
+        .docs-nav {
+            position: fixed;
+            width: 250px;
+            padding: 20px;
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .docs-nav ul {
+            list-style: none;
+        }
+
+        .docs-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+            margin: 4px 0;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .docs-nav a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Content */
+        .docs-content {
+            margin-left: 280px;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--code-bg);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        code {
+            font-family: 'Consolas', monospace;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #fff;
+                --bg-color: #1a1a1a;
+                --code-bg: #2d2d2d;
+                --border-color: #404040;
+            }
+
+            .docs-container {
+                background: #2d2d2d;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .docs-nav {
+                display: none;
+            }
+
+            .docs-content {
+                margin-left: 0;
+            }
+
+            .docs-container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="docs-container">
+        <nav class="docs-nav">
+            <ul>
+                <li><a href="#overview">Project Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage Guide</a></li>
+                <li><a href="#api">API Reference</a></li>
+                <li><a href="#ml-model">ML Model Details</a></li>
+                <li><a href="#security">Security Features</a></li>
+                <li><a href="#database">Database Schema</a></li>
+            </ul>
+        </nav>
+
+        <div class="docs-content">
+            <section id="overview" class="section">
+                <h1>Alexa Sentiment Analysis Documentation</h1>
+                <p>A machine learning-powered web application that analyzes Amazon Alexa reviews to determine sentiment polarity (positive/negative).</p>
+            </section>
+
+            <section id="features" class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time sentiment analysis of Alexa reviews</li>
+                    <li>User authentication system</li>
+                    <li>Profile management</li>
+                    <li>Contact form functionality</li>
+                    <li>Responsive design with dark mode support</li>
+                    <li>Interactive UI elements</li>
+                </ul>
+            </section>
+
+            <section id="tech-stack" class="section">
+                <h2>Technology Stack</h2>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Python Flask framework</li>
+                    <li>SQLite database</li>
+                    <li>NLTK for text processing</li>
+                    <li>Scikit-learn for ML model</li>
+                </ul>
+
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Responsive design</li>
+                    <li>Interactive animations</li>
+                </ul>
+            </section>
+
+            <section id="ml-model" class="section">
+                <h2>Machine Learning Model</h2>
+                <h3>Data Preprocessing</h3>
+                <ul>
+                    <li>HTML tag removal</li>
+                    <li>Text tokenization</li>
+                    <li>Stop words removal</li>
+                    <li>Porter Stemming</li>
+                </ul>
+
+                <h3>Model Architecture</h3>
+                <ul>
+                    <li>Algorithm: Support Vector Classification (SVC)</li>
+                    <li>Feature Extraction: CountVectorizer</li>
+                    <li>Training Split: 70-30</li>
+                </ul>
+            </section>
+
+            <section id="database" class="section">
+                <h2>Database Schema</h2>
+                <h3>Users Table</h3>
+                <pre><code>
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_active BOOLEAN DEFAULT 1
+)
+                </code></pre>
+
+                <h3>Contacts Table</h3>
+                <pre><code>
+CREATE TABLE contacts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status TEXT DEFAULT 'unread'
+)
+                </code></pre>
+            </section>
+
+            <section id="security" class="section">
+                <h2>Security Features</h2>
+                <ul>
+                    <li>Password hashing using Werkzeug</li>
+                    <li>Session management</li>
+                    <li>CSRF protection</li>
+                    <li>SQL injection prevention</li>
+                    <li>Input validation</li>
+                </ul>
+            </section>
+
+            <section id="usage" class="section">
+                <h2>Usage Guide</h2>
+                <h3>Sentiment Analysis</h3>
+                <ol>
+                    <li>Enter your Alexa review in the text area</li>
+                    <li>Click "Analyze Sentiment" button</li>
+                    <li>View the sentiment prediction (Positive/Negative)</li>
+                </ol>
+
+                <h3>User Features</h3>
+                <ul>
+                    <li>Create an account using email</li>
+                    <li>Login to access additional features</li>
+                    <li>Update profile information</li>
+                    <li>Change password</li>
+                    <li>Contact support team</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight current section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.docs-nav a');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    const id = section.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.style.background = 'transparent';
+                        link.style.color = 'var(--text-color)';
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.style.background = 'var(--primary-color)';
+                            link.style.color = 'white';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
