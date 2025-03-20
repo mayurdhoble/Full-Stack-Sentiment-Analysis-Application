@@ -2,8 +2,7 @@
 
 <div align="center">
   <h2>Application Demo Video</h2>
-  <a href="https://www.youtube.com/watch?v=tXQtmXzJilE&list=RDtXQtmXzJilE&start_radio=1" target="_blank">
-    <img src="https://images.indianexpress.com/2024/10/New-Project-2024-10-18T160819.194.jpg?w=750" alt="Application Demo Video" width="480">
+  <a href="https://www.youtube.com/watch?v=LMgT02ONujQ" target="_blank">
   </a>
 </div>
 
