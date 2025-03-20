@@ -3,6 +3,8 @@
 <div align="center">
   <h2>Application Demo Video</h2>
   <a href="https://www.youtube.com/watch?v=LMgT02ONujQ" target="_blank">
+        <img src="https://drive.google.com/file/d/1XyLu47yhMjVF0Tzut93sPLeceu4ansOa/view?usp=drive_link" alt="Application Demo Video" width="480">
+
   </a>
 </div>
 
