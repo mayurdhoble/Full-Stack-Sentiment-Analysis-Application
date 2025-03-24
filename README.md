@@ -3,7 +3,7 @@
 <div align="center">
   <h2>Lets Play Application Demo Video 👇👇 </h2>
   <a href="https://www.youtube.com/watch?v=LMgT02ONujQ" target="_blank">
-        <img src="https://github.com/mayurdhoble/Full-Stack-Sentiment-Analysis-Application/blob/main/templates/ett.png?raw=true" alt="Application Demo Video" width="480">
+        <img src="https://github.com/mayurdhoble/Full-Stack-Sentiment-Analysis-Application/blob/main/templates/ett.png?raw=true" alt="Application Demo Video" width="580">
 
   </a>
 </div>
