@@ -62,4 +62,4 @@ To run the project locally:
 4. Access at: `http://localhost:5000`
 
 ## YouTube Video
-This section will showcase the output of the project. You can watch the video [here](YOUR_YOUTUBE_LINK_HERE).
+This section will showcase the output of the project. You can watch the video [here](https://www.youtube.com/watch?v=LMgT02ONujQ).
